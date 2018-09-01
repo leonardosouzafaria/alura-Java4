@@ -1,5 +1,5 @@
 
-public class Fluxo {
+public class FluxoComTratamento {
 
 	public static void main(String[] args) {
 
@@ -33,11 +33,7 @@ public class Fluxo {
 
 		System.out.println("Início do metodoDois");
 		
-		/*ArithmeticException exception = new  ArithmeticException();
-		throw exception;*/
-		
-		throw new ArithmeticException("Mensagem de Exception");
-		
-		//System.out.println("Fim do metodoDois");
+
+		System.out.println("Fim do metodoDois");
 	}
 }
