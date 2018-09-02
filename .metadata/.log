@@ -656,3 +656,6 @@ java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be foun
 
 !ENTRY org.eclipse.jface.text 2 0 2018-09-01 23:05:02.640
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-02 00:17:03.666
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

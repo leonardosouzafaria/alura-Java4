@@ -4,17 +4,14 @@ public class Fluxo {
 	public static void main(String[] args) {
 
 		System.out.println("Início main");
-		
+
 		try {
-			
+
 			metodoUm();
-			
-		} catch (ArithmeticException | NullPointerException | MinhaExcecao e) {
+
+		} catch (Exception e) {
 			String mensagem = e.getMessage();
 			System.out.println("Exception" + mensagem);
-			
-			System.out.println("Rastro do Exception");
-			
 			e.printStackTrace();
 		}
 		System.out.println("Fim do main");
@@ -32,12 +29,13 @@ public class Fluxo {
 	private static void metodoDois() throws MinhaExcecao {
 
 		System.out.println("Início do metodoDois");
-		
-		/*ArithmeticException exception = new  ArithmeticException();
-		throw exception;*/
-		
-		throw new MinhaExcecao("Deu ruim parsa"); 	
-		
-		//System.out.println("Fim do metodoDois");
+
+		/*
+		 * ArithmeticException exception = new ArithmeticException(); throw exception;
+		 */
+
+		throw new MinhaExcecao("Deu ruim parsa");
+
+		// System.out.println("Fim do metodoDois");
 	}
 }
