@@ -9,7 +9,7 @@ public class Fluxo {
 			
 			metodoUm();
 			
-		} catch (ArithmeticException | NullPointerException e) {
+		} catch (ArithmeticException | NullPointerException | MinhaExcecao e) {
 			String mensagem = e.getMessage();
 			System.out.println("Exception" + mensagem);
 			
@@ -21,7 +21,7 @@ public class Fluxo {
 
 	}
 
-	private static void metodoUm() {
+	private static void metodoUm() throws MinhaExcecao {
 
 		System.out.println("Início do metodoUM");
 		metodoDois();
@@ -29,14 +29,14 @@ public class Fluxo {
 
 	}
 
-	private static void metodoDois() {
+	private static void metodoDois() throws MinhaExcecao {
 
 		System.out.println("Início do metodoDois");
 		
 		/*ArithmeticException exception = new  ArithmeticException();
 		throw exception;*/
 		
-		throw new ArithmeticException("Mensagem de Exception");
+		throw new MinhaExcecao("Deu ruim parsa"); 	
 		
 		//System.out.println("Fim do metodoDois");
 	}
