@@ -1,5 +1,5 @@
 
-public class Conexao {
+public class Conexao implements AutoCloseable {
 	
 	public Conexao() {
 		System.out.println("Abrindo conexao");
@@ -7,11 +7,16 @@ public class Conexao {
 	
 	public void leDados() {
 		System.out.println("Recebendo dados");
-		//throw new IllegalStateException();
+		throw new IllegalStateException();
 	}
 	
 	public void fecha() {
-		System.out.println("Fechando conexão");
+		System.out.println("Fechando conexão com método fecha");
+	}
+	
+	@Override
+	public void close() {
+		System.out.println("Fechando conexão com o método close");
 	}
 
 }
